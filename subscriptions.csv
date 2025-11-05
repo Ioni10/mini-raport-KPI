@@ -1,5 +1,5 @@
 user_id,plan,started_at,canceled_at,auto_renew
-1976,Basic,2024-06-16 09:47:12,,True
+1976,Basic,2024-06-16 09:47:12,inca nu,True
 4432,Pro,2024-10-19 00:28:33,,False
 3937,Pro,2024-02-23 16:23:33,,True
 2964,Pro,2024-08-01 15:41:44,2024-11-25 15:41:44,False
