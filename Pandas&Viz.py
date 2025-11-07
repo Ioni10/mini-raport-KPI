@@ -74,7 +74,7 @@ plt.title('Boxplot pentru amount')
 plt.tight_layout()
 plt.show()
 """
-Explicati---
+Explicatii---
 Avem o distributie asimetrica(skewed)
 Boxplot.ul ne areata:
 -valoarea minima este 0;
