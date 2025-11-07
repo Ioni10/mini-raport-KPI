@@ -57,8 +57,10 @@ status = df_order.status.value_counts()
 print(status)
 df_order_real = df_order[~df_order['status'].isin(['cancelled', 'refunded'])]
 #print(df_order_real['status'].value_counts())
-
-plt.figure(figsize=(12,5))
+print('Q3:',q3)
+print('Q1:' ,q1)
+print('Mediana:', df_order_real.amount.median())
+plt.figure(figsize=(16, 4))
 #histograma
 plt.subplot(1,2,1)
 sns.histplot(df_order_real['amount'], bins=30, kde=True)
@@ -73,4 +75,22 @@ plt.tight_layout()
 plt.show()
 """
 Explicati---
- """
+Avem o distributie asimetrica(skewed)
+Boxplot.ul ne areata:
+-valoarea minima este 0;
+-q1 = 254.6625;
+-mediana= circa 500 (498.29);
+-q3 = 869.74;
+-valoarea maxima este
+avem si valori 'outlieri' valori care se abat de la boxplot.ul nostru(comenzi mai mari, fata de tendinta)    
+Histograma cu frecventa descendenta deoarece avem o distributie asimetrica spre dreapta
+Majoritatea valorilor sunt mici (in jur de 0-1000) si scade treptat pe masura ce 'amount' creste.
+
+
+Pe scurt:
+Aceasta distributie indica faptul ca cele mai multe comenzi au o valoare redusa,
+in timp ce un numar mic de comenzi cu valori mari influenteaza media si genereaza prezenta outlierilor.  
+"""
+
+
+
