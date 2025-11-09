@@ -78,10 +78,8 @@ plt.subplot(1,2,2)
 sns.boxplot(x = df_order_real['amount'])
 plt.title('Boxplot pentru amount')
 plt.tight_layout()
-plt.show()
 plt.savefig("images/amount_hist_boxplot.png")
-
-
+plt.show()
 
 #Funnel 14zile:
 
@@ -142,9 +140,8 @@ plt.title('Funnel 14 zile - utilizatori unici per pas')
 plt.ylabel('Număr utilizatori')
 plt.xlabel('Etape Funnel')
 plt.tight_layout()
-
 plt.savefig("images/funnel.png")
-plt.close()
+plt.show()
 """
 Explicatii---
 Avem o distributie asimetrica(skewed)
@@ -240,12 +237,15 @@ plt.ylabel('Revenue')
 plt.xticks(rotation=45)
 plt.legend()
 plt.tight_layout()
-plt.show()
 plt.savefig("images/revenue_ma7_anomalies.png")
 plt.close()
+plt.show()
+
 top_5_anomalii.to_csv("top5_anomalies.csv", header=["revenue"])
 
 #Salvare grafice:
 if not os.path.exists("images"):
     os.makedirs("images")
 
+print(df_order_real.shape)
+print(df_order_real.head())
