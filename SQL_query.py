@@ -8,7 +8,7 @@ con.execute("""
            SUM(amount) AS revenue
     FROM orders
     WHERE status = 'paid'
-      AND order_date >= CURRENT_DATE - INTERVAL '30 days'
+      AND order_date >= CURRENT_DATE - INTERVAL '29 days'
       GROUP BY day
       ORDER BY day;
 """).fetchdf()
