@@ -78,7 +78,7 @@ plt.subplot(1,2,2)
 sns.boxplot(x = df_order_real['amount'])
 plt.title('Boxplot pentru amount')
 plt.tight_layout()
-plt.savefig("images/amount_hist_boxplot.png")
+plt.savefig("images/amount_hist_box.png", dpi=150)
 plt.show()
 
 #Funnel 14zile:
@@ -245,7 +245,8 @@ top_5_anomalii.to_csv("top5_anomalies.csv", header=["revenue"])
 
 #Salvare grafice:
 if not os.path.exists("images"):
-    os.makedirs("images")
+    os.makedirs("images", exist_ok=True)
+
 
 print(df_order_real.shape)
 print(df_order_real.head())
