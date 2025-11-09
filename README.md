@@ -74,8 +74,6 @@ Se calculează KPI principali, se analizează funnel-ul utilizatorilor, se efect
 3. A/B testul indică o îmbunătățire semnificativă a conversiei pentru varianta testată.  
 4. Revenue-ul zilnic are fluctuații, iar analiza MA(7) cu anomalii ajută la identificarea vârfurilor neobișnuite.
 
----
 
-**Notă:** Graficele trebuie salvate în folderul `images/` cu numele:  
-- `amount_hist_box.png`  
-- `revenue_ma7_anomalies.png`
+
+
