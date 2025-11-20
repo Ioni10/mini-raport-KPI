@@ -75,5 +75,5 @@ Se calculează KPI principali, se analizează funnel-ul utilizatorilor, se efect
 4. Revenue-ul zilnic are fluctuații, iar analiza MA(7) cu anomalii ajută la identificarea vârfurilor neobișnuite.
 
 
-
+Raport creat cu ajutorul AI:GPT-5 mini
 
